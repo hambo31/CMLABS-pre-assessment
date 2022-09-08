@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website</title>
+</head>
+
+<body>
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            overflow-x: hidden;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: inherit;
+        }
+
+        .col-md-12 {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .col-md-6 {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .bg-green {
+            background-color: #42d07c;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .content {
+            margin: 15%;
+        }
+
+        .text-h1 {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 3em;
+            line-height: 1.2;
+        }
+
+        .content p {
+            color: #fff;
+            max-width: 75%;
+        }
+
+        .btn-more {
+            background-color: transparent;
+            border: solid 2px #fff;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 15px 30px;
+            border-radius: 25px;
+            margin-top: 10px;
+        }
+
+        img {
+            margin: 3% auto;
+            position: absolute;
+            left: 40%;
+            width: 660px;
+        }
+
+        @media (min-width: 768px) {
+            .col-md-6 {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+
+            .col-md-12 {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                display: grid;
+            }
+
+            .col-md-6 {
+                position: relative;
+                width: 100% !important;
+                max-width: 100%;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+                text-align: center;
+            }
+
+            .content p {
+                max-width: 100%;
+            }
+
+            .bg-green-mobile {
+                background-color: #42d07c;
+                margin-top: -1px;
+            }
+
+            img {
+                width: 75%;
+                position: relative;
+                left: 0;
+                margin-bottom: 50px;
+            }
+        }
+    </style>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-6 bg-green">
+                <div class="content">
+                    <h1 class="text-h1">LATEST<br>DESIGN BLOGS</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button class="btn-more">Learn More</button>
+                </div>
+            </div>
+            <div class="col-md-6 bg-green-mobile">
+                <img
+                    src="https://thumbs.dreamstime.com/b/business-people-meeting-discussion-working-office-concept-65007656.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
